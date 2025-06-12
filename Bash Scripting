@@ -1,0 +1,17 @@
+Bash Battle Arena!
+This game comes at the end of the Bash scripting module designed to solidify the material learnt in the module and also fill in any gaps of knoweledge.
+I will document my progress as i try to coomplete as many levels as possible!
+
+Level 1:
+Mission: Create a directory named Arena and then inside it, create three files: warrior.txt, mage.txt, and archer.txt. List the contents of the Arena directory.
+
+Level 1 complete! I started by making a directory named "Arena" using the mkdir command. I then created a simple script and named it "level1". This is what i entered:
+
+#!/bin/bash
+
+#level_1
+
+
+touch warrior.txt mage.txt archer.txt
+
+mv warrior.txt mage.txt archer.txt /home/ubuntu/Arena
