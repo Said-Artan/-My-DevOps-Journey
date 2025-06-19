@@ -1,0 +1,27 @@
+Git & Version Control – My Learning Journal
+
+What I’ve Learned So Far
+
+As part of my DevOps journey, I’ve been getting hands-on with Git and learning how to use version control the right way. Here are some of the core things I’ve picked up:
+	•	I understand the basic Git workflow now: git init, git add, git commit, git push, and git pull.
+	•	Commits are like snapshots in time — I’ve learned that writing clear commit messages helps track progress better.
+	•	I’ve learned the difference between git reset and git revert. Reset rewinds history and can be risky, while revert safely undoes a commit by creating a new one.
+	•	I know how to open the terminal in VS Code and link my local projects to GitHub.
+	•	I figured out how to set up SSH keys for secure GitHub access instead of using passwords.
+	•	I learned about .gitignore and how it helps keep unnecessary or private files out of version control.
+
+⸻
+
+Challenges I Faced
+	•	At first, I didn’t know how to open the terminal in VS Code or why Git wasn’t showing up.
+	•	I had issues trying to manually set up SSH without fully understanding how it worked with GitHub.
+	•	I ran into some confusing “unexpected end of file” errors in bash scripts tracked by Git — which taught me to be more careful with syntax.
+	•	I genuinely questioned why everything has to be managed in code instead of using modern UIs — but I’m starting to understand the power of having repeatable and automated setups.
+
+⸻
+
+Why This Matters to Me
+
+Learning Git is more than just a tech skill — it’s helping me build the foundation for real-world teamwork, project tracking, and automation. It’s been frustrating at times, but every struggle has deepened my understanding.
+
+This is just the beginning of my DevOps journey, and I’m looking forward to what comes next.
