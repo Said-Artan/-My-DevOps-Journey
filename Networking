@@ -1,1 +1,99 @@
+Networking Basics Summary
 
+Topics Covered:
+	•	LAN vs WAN:
+Learned the difference between local networks (LAN) and global ones (WAN). LANs are fast and private, WANs span long distances like the internet.
+	•	Ports & Protocols:
+Explored how services use specific ports (like 80 for HTTP, 22 for SSH). Learned to think of ports as doorways for data.
+	•	TCP vs UDP:
+Understood the trade-offs:
+	•	TCP = reliable and ordered
+	•	UDP = faster but no guarantees (used in gaming/streaming)
+
+Challenges Faced:
+	•	Initially struggled to grasp how ports and protocols work together.
+	•	Thought UDP was just “worse” than TCP until I understood it’s about use case, not reliability.
+
+Why it Matters:
+
+This knowledge is foundational for DevOps, cloud, and security roles — especially when dealing with servers, firewalls, or debugging connectivity.
+
+OSI Model (7 Layers of Networking)
+
+Topics Covered:
+	•	Broke down each of the 7 layers:
+	1.	Physical – cables, switches
+	2.	Data Link – MAC addresses, Ethernet
+	3.	Network – IP addressing, routing
+	4.	Transport – TCP/UDP
+	5.	Session – session management
+	6.	Presentation – encryption, formatting
+	7.	Application – end-user protocols (HTTP, DNS, etc.)
+
+Challenges Faced:
+	•	At first, the layers felt abstract and too academic — I struggled to understand how it relates to real-world problems.
+	•	What helped: learning how protocols like TCP, DNS, and HTTP map to specific layers, and tying that back to things I’d already seen in networking.
+
+Takeaway:
+
+Understanding the OSI model gave me a framework to troubleshoot issues more logically — like tracing a network failure layer by layer.
+
+⸻
+
+DNS (Domain Name System)
+
+Topics Covered:
+	•	Learned how DNS translates domain names into IP addresses behind the scenes.
+	•	Studied the DNS resolution cycle:
+	•	Browser cache → OS → Resolver → Root → TLD → Authoritative DNS → IP returned
+	•	Understood the role of recursive and authoritative DNS servers
+
+Challenges Faced:
+	•	Took a while to visualise the full DNS request flow — I didn’t realise how many steps were involved.
+	•	Initially thought DNS was “just name lookup,” but now see its role in performance, security, and connectivity.
+
+Takeaway:
+
+DNS is critical. From configuring servers to troubleshooting why a website won’t load, knowing how DNS works is a must in DevOps, networking, and security.
+IP Addressing, Subnetting & Routing Summary
+
+Subnetting (CIDR Notation, Usable Ranges, Broadcast, etc.)
+
+Topics Covered:
+	•	Learned how to interpret and break down CIDR notations like /26, /28, /30, /27
+	•	Calculated:
+	•	Total number of IPs
+	•	Network and broadcast addresses
+	•	Usable host ranges
+	•	Practiced converting IPs to binary using the divide-by-2 method
+
+Challenges Faced:
+	•	Initially confused by broadcast vs. usable IPs
+	•	Mistakenly included .0. in IPs like 192.168.5.0.31
+	•	Struggled early with host bits vs total IPs — but cleared it up by working step-by-step
+
+Takeaway:
+
+Subnetting was intimidating at first, but breaking it down logically and working through real examples helped everything click.
+
+⸻
+
+Routing
+
+Topics Covered:
+	•	Understood the purpose of routing: moving packets between networks
+	•	Learned how routers use IP addresses and subnet masks to decide where to send data
+	•	Discussed how IP ranges determine whether traffic stays inside a LAN or goes out via a gateway
+
+Takeaway:
+
+Routing made more sense after learning subnetting — I could see how a router uses network IDs and masks to forward traffic properly.
+
+⸻
+
+DNS (Hands-On)
+	•	Edited /etc/hosts to map custom domain names (like dev.local) to IPs
+	•	Tested how local name resolution can override public DNS
+	•	Learned that incorrect entries in hosts can block access to real websites
+
+Over the past few weeks, I’ve been steadily building my understanding of networking from the ground up. I’ve learned how devices connect locally and across the internet, what roles things like IP addresses, ports, and protocols play, and how systems find each other using DNS. I tackled the OSI model, made sense of routing, and even broke down subnetting — one binary calculation at a time. It wasn’t always easy, but working through real examples helped me connect the dots. I now feel far more confident navigating core networking concepts that power everything from websites to cloud infrastructure.
